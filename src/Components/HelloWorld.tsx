@@ -12,7 +12,10 @@ const HelloWorld = () =>{
     )
 
     return(
-        <h1>{hello}</h1>
+        <section className="component">
+            <h1 >{hello}</h1>
+        </section>
+        
     )
 }
 
