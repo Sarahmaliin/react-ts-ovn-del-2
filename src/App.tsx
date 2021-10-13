@@ -6,7 +6,6 @@ import HelloWorld from './Components/HelloWorld';
 function App() {
 
   const [showClock, setShowClock] = useState<boolean>(true)
-	const clockVisibleClass = showClock ? '' : 'hidden'
 
 
   return (
