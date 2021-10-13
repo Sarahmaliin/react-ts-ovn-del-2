@@ -12,7 +12,6 @@ const Notification = ({message}: NotificationProps) =>{
     useEffect(() =>{
         let intervalTime = setTimeout(() =>{
             setSeconds(s => s + 1)
-            console.log(seconds, 'timeout')
             setNoteVisible('show')
         }, 3000)
 

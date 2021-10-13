@@ -4,6 +4,8 @@ import Ajax from './Components/Ajax';
 import Clock from './Components/Clock';
 import HelloWorld from './Components/HelloWorld';
 import Notification from './Components/Notification';
+import StarWars from './Components/StarWars';
+import Sun from './Components/Sun';
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
 
       <Notification message={message} />
       <Ajax/>
+      <StarWars />{/*  5, work on this */}
+      < Sun /> {/*  6a, modify w useEffect? */}
     </div>
   );
 }
