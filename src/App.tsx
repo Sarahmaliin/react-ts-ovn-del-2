@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Ajax from './Components/Ajax';
 import Clock from './Components/Clock';
+import Form from './Components/Form';
 import HelloWorld from './Components/HelloWorld';
 import Notification from './Components/Notification';
 import StarWars from './Components/StarWars';
@@ -22,6 +23,11 @@ function App() {
       <Ajax/>
       <StarWars />{/*  5, work on this */}
       < Sun /> {/*  6a, modify w useEffect? */}
+      
+      <br/>
+
+      <Form />
+
     </div>
   );
 }
