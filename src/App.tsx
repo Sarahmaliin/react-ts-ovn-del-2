@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import Ajax from './Components/Ajax';
 import Clock from './Components/Clock';
 import HelloWorld from './Components/HelloWorld';
 import Notification from './Components/Notification';
@@ -16,6 +17,7 @@ function App() {
             { showClock ? <Clock /> : null}
 
       <Notification message={message} />
+      <Ajax/>
     </div>
   );
 }
