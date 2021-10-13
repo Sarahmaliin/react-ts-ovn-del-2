@@ -24,7 +24,7 @@ const Clock = () =>{
 
     return(
         < section className="component">
-        <h1 >{clockIs}</h1>
+        <h1 className="clockIs" >{clockIs}</h1>
         </section>
     )
     

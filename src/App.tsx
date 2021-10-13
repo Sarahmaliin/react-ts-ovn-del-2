@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <HelloWorld />
-      <button onClick={() => setShowClock(!showClock)}> Toggla klockan </button>
+      <button className='toggleBtn' onClick={() => setShowClock(!showClock)}> Toggla klockan </button>
             { showClock ? <Clock /> : null}
 
       <Notification message={message} />
