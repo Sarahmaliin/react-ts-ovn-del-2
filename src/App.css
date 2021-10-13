@@ -1,11 +1,37 @@
 .App {
   text-align: center;
+  position: relative;
+}
+
+h1{
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.03em;
+  font-size: 2em;
+}
+
+html{
+  background: white;
+}
+
+.toggleBtn{
+  position: absolute;
+  right: 4em;
 }
 
 .component, .show{
-  border: 1px solid black;
+  border: 1px solid #8DDCFC;
   border-radius: 2em;
-  margin: 2em;
+  margin: 1em;
+  padding: 1.5em;
+}
+
+.component{
+  background: #88B7F2;
+}
+
+.clockIs{
+  margin-block: unset;
+  padding: 1em;
 }
 
 
@@ -17,4 +43,14 @@
   transition-timing-function: ease-in;
   opacity: 1;
   transition: all 3s;
+  background: #88B7F2;
+}
+
+button{
+  font-family: 'Open Sans', sans-serif;
+  padding: .75em;
+  border: none;
+  border-radius: 2em;
+  margin: .75em;
+  background: #88F2BA;
 }

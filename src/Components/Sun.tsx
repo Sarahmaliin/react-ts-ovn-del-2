@@ -27,7 +27,10 @@ const Sun = () =>{
         <h1>Sunrise/Sunset</h1>
         <button onClick={GbgBtn}>Göteborg</button>
         <button onClick={SthlmBtn}>Stockholm</button>
-        {sunData ? 'sunrise: ' + sunData.sunrise + ', sunset: '+ sunData.sunset : ' '}
+        <br/>
+        <section className="sunData">
+          {sunData ? 'Sunrise: ' + sunData.sunrise + ', Sunset: '+ sunData.sunset : ' '}
+        </section>
         </section>
     )
 }
