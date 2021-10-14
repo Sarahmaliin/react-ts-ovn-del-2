@@ -3,7 +3,6 @@ import { useState } from "react"
 const Form = () =>{
 
     const [ name, setName ] = useState<string>('förnamn')
-    const [ lastName, setLastName ] = useState<string>('efternamn')
 
     const handleNameChange = (event: any) =>{
         event.preventDefault()
