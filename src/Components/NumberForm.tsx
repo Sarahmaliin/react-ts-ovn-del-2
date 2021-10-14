@@ -7,11 +7,11 @@ interface NumberProps{
 
 const NumberForm: FC<NumberProps> = ({highest, lowest}) =>{
 
-    const [visible, setVisible] = useState<string>('number')
+    const [visible, setVisible] = useState<number>()
 
     async function handleNumberChange(e: ChangeEvent<HTMLInputElement>){
         e.preventDefault()
-        const value = e.target.value;
+        const value = Number(e.target.value);
         setVisible(value)
         
         }
