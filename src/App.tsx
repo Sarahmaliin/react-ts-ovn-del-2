@@ -5,6 +5,7 @@ import Clock from './Components/Clock';
 import Form from './Components/Form';
 import HelloWorld from './Components/HelloWorld';
 import Notification from './Components/Notification';
+import NumberForm from './Components/NumberForm';
 import StarWars from './Components/StarWars';
 import Sun from './Components/Sun';
 
@@ -27,6 +28,10 @@ function App() {
       <br/>
 
       <Form />
+
+      <br/>
+
+      < NumberForm lowest={8} highest={30} />
 
     </div>
   );
