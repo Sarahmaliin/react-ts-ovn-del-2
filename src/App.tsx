@@ -22,7 +22,7 @@ function App() {
 
       <Notification message={message} />
       <Ajax/>
-      <StarWars />{/*  5, work on this */}
+      <StarWars />{/*  5, work on this not fully done */}
       < Sun /> {/*  6a, modify w useEffect? */}
       
       <br/>
