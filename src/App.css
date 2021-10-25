@@ -3,6 +3,31 @@
   position: relative;
 }
 
+.menu.true{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu.false{
+  display: none;
+}
+
+a{
+  margin: 1em;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  background-color: lightblue;
+  width: 100vw;
+  padding: 1em 0 1em 0;
+}
+
 h1{
   font-family: 'Playfair Display', serif;
   letter-spacing: 0.03em;
