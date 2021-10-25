@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+// Det finns två routers eftersom React Router finns både för DOM och för smartphone (react native)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
