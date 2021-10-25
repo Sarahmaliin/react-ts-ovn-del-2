@@ -1,16 +1,19 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
-interface ServerResponse{
-    results: object;
+interface ServerResponseItem{
     name: string;
+    gender: string;
 }
+
+interface ServerResponseItem extends Array<ServerResponseItem>{}
 
 
 
 const StarWars = () =>{
 
-    const [starWarsData, setStarWarsData] = useState< null | ServerResponse>(null)
+    const [starWarsData, setStarWarsData] = useState< null | ServerResponseItem[]>(null)
     const url: string = 'https://swapi.dev/api/people'
+    let names: string;
 
     async function charBtn(){
         const response = await fetch(url)
@@ -19,17 +22,23 @@ const StarWars = () =>{
         
     }
 
-    useEffect(() => {
-        console.log(starWarsData)
-    }, [starWarsData])
-
     return(
         <section className='component'>
             <h1>Star Wars</h1>
             <button onClick={charBtn}>Get characters</button>
             <br/>
-            <section className="sunData">
-            {starWarsData ? 'Data: ' : ''}
+            <section className="sWData">
+            {starWarsData ? 
+            starWarsData.map(item =>{
+                names = item.name
+                console.log(names)
+                let doc = document.querySelector('.sWData')
+                const pTag = document.createElement('p')
+                console.log(pTag)
+                pTag.innerHTML = names;
+                doc?.appendChild(pTag)
+            })
+        : 'loading...'}
             </section>
         </section>
         
